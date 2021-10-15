@@ -13,7 +13,7 @@ mkdir -p "$ACTIVATE_LICENSE_PATH"
 
 source /steps/activate.sh
 
-if [[ "$PRIVATE_PACKAGE_REPOSITORY_URL" -ne "" ]]; then
+if [[ -n "$PRIVATE_PACKAGE_REPOSITORY_URL" ]]; then
   source /steps/setup_private_registry.sh
 fi
 
