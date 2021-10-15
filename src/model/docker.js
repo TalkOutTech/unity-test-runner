@@ -58,6 +58,8 @@ class Docker {
         --env RUNNER_TOOL_CACHE \
         --env RUNNER_TEMP \
         --env RUNNER_WORKSPACE \
+        --env PRIVATE_PACKAGE_REPOSITORY_URL \
+        --env PRIVATE_PACKAGE_REPOSITORY_TOKEN \
         ${sshAgent ? '--env SSH_AUTH_SOCK=/ssh-agent' : ''} \
         --volume "/var/run/docker.sock":"/var/run/docker.sock" \
         --volume "/home/runner/work/_temp/_github_home":"/root" \
